@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>结合css3中的边框圆角、阴影，颜色渐变和背景开发一个导航栏的组件</title>
+  <link rel="stylesheet" href="../css/index1.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    body{
+      background: #ebebeb;
+    }
+  </style>
+</head>
+<body>
+  <ul id="navigator">
+
+  </ul>
+  <script src="../js/index1.js"></script>
+  <script>
+    let navlist = [
+      {
+        link: '',
+        content: 'Home'
+      },
+      {
+        link: '',
+        content: 'About Me'
+      },
+      {
+        link: '',
+        content: 'Portfolio'
+      },
+      {
+        link: '',
+        content: 'Blog'
+      },
+      {
+        link: '',
+        content: 'Resources'
+      },
+      {
+        link: '',
+        content: 'Concat Me'
+      }
+    ]
+    let nav = navInstance('#f65f57', 'left', navlist, '#fff', document.getElementById('navigator'))
+    nav.init();
+  </script>
+</body>
+</html>
